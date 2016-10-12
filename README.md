@@ -15,7 +15,14 @@
 * 각 요구사항을 구현하는 것이 중요한 것이 아니라 구현 과정을 통해 학습한 내용을 인식하는 것이 배움에 중요하다. 
 
 ### 요구사항 1 - http://localhost:8080/index.html로 접속시 응답
-* 
+* java에서 InputStream을 처리하기 위해서는
+* InputStream in
+* BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
+* bufferedReader.readLine(); 을 사용한다
+
+* java에서 파일을 읽는 경우
+* byte[] body = Files.readAllBytes(Paths.get("./webapp", urlPath));
+
 
 ### 요구사항 2 - get 방식으로 회원가입
 * 
